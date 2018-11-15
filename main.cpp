@@ -12,7 +12,7 @@ int main() {
     assert(toi->toString() == "Identitee : Paul Jean 12" && "Test 2 failed");
 
     moi->setPhoneNumber("0633793232");
-    assert(toi->toString(true) == "Identitee : Jean Paul (+33)0633793232" && "Test 3 failed");
+    assert(moi->toString(true) == "Identitee : Jean Paul (+33)0633793232" && "Test 3 failed");
 
     toi->setPhoneNumber("0633793233");
     assert(toi->toString() == "Identitee : Paul Jean 12" && "Test 4 failed");
